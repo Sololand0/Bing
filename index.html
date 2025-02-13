@@ -1,0 +1,30 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>لعبة الأسئلة المصورة</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- قسم إدخال الاسم -->
+  <div id="usernameContainer">
+    <h2 style='color:red'>أدخل اسمك للبدء</h2>
+    <input type="text" id="clientNameInput" placeholder="اسمك">
+    <button id="startGameBtn">ابدأ اللعبة</button>
+  </div>
+
+  <!-- قسم اللعبة (يظهر بعد إدخال الاسم) -->
+  <div class="question-container" id="gameContainer" style="display: none;">
+    <h2 id="question-text"></h2>
+    <img class="question-image" id="question-image" alt="صورة السؤال">
+    <div class="options-container" id="options-container"></div>
+    <div class="progress-bar">
+      <div class="progress" id="progress-bar"></div>
+    </div>
+    <p id="stats"></p>
+  </div>
+
+  <script src="/client.js"></script>
+</body>
+</html>
